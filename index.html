@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hawk Shuttles</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="parent">
+        <div class="div1">
+            <div class="header">
+                <b>HAWK SHUTTLES</b>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="div2">
+            <nave>
+                <nav><a href="index.html">Home</a></nav>
+                <nav><a href="booking.html">Book Ticket</a></nav>
+                <nav><a href="about.html">About</a></nav>
+                <nav><a href="login.html">Login</a></nav>
+            </nave>
+        </div>
+        <div class="div3">
+            <div class="first">
+                <p>Beyond boundries, into the unknown</p>
+                <p>EXPLORE WITHOUT LIMITS</p>
+            </div>
+            <div class="second">
+                <a href="destination.html">YOUR DESTINATION</a>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="link">
+                <a href="pdetails.html">
+                    <div class="image">
+                        <img src="astronaut.png" alt="" srcset="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="div5">
+            <a href="rdetails.html">
+                <div class="div5_btn">
+                    Rocket Details
+                </div>
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="rocket_card.jpg" class="cover-image" />
+                    </div>
+                    <img src="rocket.png" class="character" />
+                </div>
+            </a>
+        </div>
+        <div class="div6">
+            <a href="neil.html" class="btn">Neil Talks</a>
+        </div>
+        <div class="div7">
+            <a href="encyclopedia.html" class="btn">Encyclopedia</a>
+        </div>
+        <div class="div8">
+            <div class="title">
+                Popular Visits
+            </div>
+            <div class="container">
+                <div class="card1">
+                    <img src="mars1.jpg">
+                    <div class="overlay">
+                        <p>A beautiful red planet.</p>
+                        <p>Visited by 120k passengers.</p>
+                        <p>Ratings: 4.6</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="jupiter1.jpg">
+                    <div class="overlay">
+                        <p>Giant planet with great gravitational force.</p>
+                        <p>Visited by 90k passengers</p>
+                        <p>Ratings: 4.4</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="moon1.jpg">
+                    <div class="overlay">
+                        <p>Beautiful as heaven.</p>
+                        <p>Visited by 150k passengers.</p>
+                        <p>Ratings: 4.5</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="mercury1.jpg">
+                    <div class="overlay">
+                        <p>Small planet and closest to our sun.</p>
+                        <p>Visited by 110k</p>
+                        <p>Ratings: 4.3</p>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="pluto1.jpg">
+                    <div class="overlay">
+                        <p>Dwarf Planet with very less gravity.</p>
+                        <p>Visited by 80k</p>
+                        <p>Ratings: 4.5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let btns = document.querySelectorAll('.btn');
+            btns.forEach(function (btn) {
+                let spans = []
+                for (let i = 0; i < 120; i++) {
+                    let span = document.createElement('span');
+                    span.style.left = `${i * 2}px`;
+                    spans.push(span);
+                    btn.appendChild(span);
+                    let randomDealy = (Math.random() * 1) + 0;
+                    span.style.transitionDelay = randomDealy + 's';
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
