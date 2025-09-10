@@ -1,0 +1,40 @@
+body {
+    /* background-color: white; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+  }
+  
+  .hover-image {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Hidden box by default */
+  .popup-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    z-index: 9999;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  
+  /* Show box when image is hovered */
+  .image-wrapper:hover .popup-box {
+    display: block;
+  }
+  

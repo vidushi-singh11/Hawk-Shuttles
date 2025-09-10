@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+    background: url('background1.jpg') no-repeat center center/cover;
+    font-family: 'Orbitron', copperplate gothic;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 40px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.header:hover {
+    transform: scale(1.2);
+    opacity: 1.1;
+}
+
+.header a{
+    text-decoration: none;
+    color:blueviolet;
+}
+
+.container {
+    width: 70vw;
+    transition: all 1s;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    text-align: center;
+    opacity: 0.8;
+}
+
+.container:hover{
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 8px 8px rgb(165, 166, 225);
+    opacity: 1;
+}
+
+h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: cyan;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan;
+    }
+    to {
+        text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    background: cyan;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #bbb;
+}

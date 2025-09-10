@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Hover Box</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <model-viewer src="./mars_gltf/scene.gltf" camera-controls disable-zoom auto-rotate ar ar-modes="webxr scene-viewer quick-look" style="width: 100%; height: 100vh;" alt="A 3D model of Mars" poster="./mars_gltf/poster.jpg">
+    <button slot="ar-button" id="ar-button">View in AR</button>
+    <div class="info-box">
+      <h1>Mars</h1>
+      <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, after Mercury.</p>
+    </div>          
+
+  </model-viewer>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>
